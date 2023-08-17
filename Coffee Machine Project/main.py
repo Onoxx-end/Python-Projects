@@ -4,15 +4,12 @@ from menu import MENU, resources
 
 def resource_subtracting(type_of_coffee):
     """Subtracts amount of Water, Milk and Coffee from Resources."""
-    global MENU
-    global resources
     for ingredient, amount in MENU[type_of_coffee]['ingredients'].items():
         resources[ingredient] -= amount
 
 
 def check_resources(type_of_coffee):
-    global MENU
-    global resources
+    """Checks if you have enough resources"""
     for ingredient, amount in MENU[type_of_coffee]['ingredients'].items():
         if resources[ingredient] < amount:
             print(f"Sorry, not enough {ingredient}.")
@@ -50,11 +47,12 @@ def serve(type_of_coffee):
 
 
 def report():
-    global resources
+    """Gets a report"""
     print(resources)
 
 
 def coffee_machine():
+    """Starts the machine"""
     end_order = False
 
     while not end_order:
