@@ -69,9 +69,8 @@ def coffee_machine():
         else:
             if check_resources(order) == 0:
                 end_order = True
-            else:
-                serve(order)
-                resource_subtracting(order)
+        serve(order)
+        resource_subtracting(order)
 
 
 coffee_machine()
