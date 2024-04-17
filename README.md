@@ -47,8 +47,4 @@ Many Thanks to Dr. Angela Yu for creating the course "100 Days of Code: The Comp
 
 https://www.udemy.com/course/100-days-of-code/
 
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 Happy coding! 🐍🚀
